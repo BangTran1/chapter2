@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Heart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- Thêm phông chữ -->
+    <style>
+        /* Thêm CSS để căn giữa chữ */
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Màu chữ */
+            font-size: 24px; /* Kích thước chữ */
+            text-align: center; /* Căn giữa chữ */
+            z-index: 1; /* Đảm bảo chữ nằm trên canvas */
+            font-family: 'Dancing Script', cursive; /* Sử dụng phông chữ viết tay */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Thêm bóng đổ cho chữ */
+        }
+    </style>
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <canvas id="heart"></canvas>
+    <!-- partial -->
+    <div class="text-overlay">Tớ thật sự thích cậu, nếu có thể, xin cậu đón nhận tình cảm của tớ</div> <!-- Thêm chữ vào đây -->
+    <script src="./script.js"></script>
+</body>
+</html>
